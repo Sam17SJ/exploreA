@@ -1,0 +1,135 @@
+<div class="row">
+
+    <div class="col s3">
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       
+            <ul materialize=collapsible class="collapsible" data-collapsible="expandable">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>            
+        
+       
+        </div>
+  <div class="col s9">
+
+    <h3>Propiedades 5 estrellas  </h3>
+
+    
+
+
+      <div class="card" *ngFor="let l of propiedades">
+        <div class="thumbnail" >
+          <div class="img-contenedor">
+            <img width="200" height="200" src="http://127.0.0.1:8000/uploads{{l.imagen[0]}}" alt="..." class="rounded">
+          
+          </div>
+          <div class="caption">
+            <h3 class="blue-text text-darken-2">{{l.titulo}}</h3>
+            <p>{{l.precio}}</p>
+            <p><a routerLink='/detalles/{{l.id}}' class="btn btn-primary" role="button">Ver</a> </p>
+          </div>    
+        </div>
+      </div>
+      
+     
+
+      <h3>Propiedades 4 estrellas  </h3>
+
+      <div class="scrolling-wrapper" >
+      
+      
+        <div class="card" *ngFor="let l of propiedades">
+          <div class="thumbnail">
+              <div class="img-contenedor">
+                <img width="200" height="200" src="http://127.0.0.1:8000/uploads{{l.imagen[0]}}" alt="..." class="rounded">
+              </div>
+            <div class="caption">
+              <h3 class="blue-text text-darken-2">{{l.titulo}}</h3>
+              <p>{{l.precio}}</p>
+              <p><a routerLink='/detalles/{{l.id}}' class="btn btn-primary" role="button">Ver</a> </p>
+            </div>
+          </div>
+        </div>    
+      
+          
+      </div>
+        <h3>Propiedades 3 estrellas  </h3>
+
+      <div class="scrolling-wrapper" >
+      
+      
+        <div class="card" *ngFor="let l of list">
+          <div class="thumbnail">
+              <div class="img-contenedor">
+                  <img width="200" height="200" src="{{url3}}" alt="..." class="rounded">
+                </div>
+            <div class="caption">
+              <h3 class="blue-text text-darken-2">{{l.nombre}}</h3>
+              <p>{{l.descripcion}}</p>
+              <p>{{l.broker}}</p>
+              <p><a routerLink='/detalles/{{l.id}}' class="btn btn-primary" role="button">Ver</a> </p>
+            </div>
+          </div>
+        </div>    
+      
+          
+      </div>
+        <h3>Propiedades 2 estrellas  </h3>
+
+      <div class="scrolling-wrapper" >
+      
+      
+        <div class="card" *ngFor="let l of list">
+          <div class="thumbnail">
+            <div class="img-contenedor">
+                <img width="200" height="200" src="{{url4}}" alt="..." class="rounded">
+            </div>
+            <div class="caption">
+              <h3 class="blue-text text-darken-2" >{{l.nombre}}</h3>
+              <p>{{l.descripcion}}</p>
+              <p>{{l.broker}}</p>
+              <p><a routerLink='/detalles/{{l.id}}' class="btn btn-primary" role="button">Ver</a> </p>
+            </div>
+          </div>
+        </div> 
+      
+      
+          
+      </div>
+        <h3>Propiedades 1 estrellas  </h3>
+
+      <div class="scrolling-wrapper" >
+      
+      
+        <div class="card" *ngFor="let l of list">
+          <div class="thumbnail">
+              <div class="img-contenedor">
+                  <img width="200" height="200" src="{{url5}}" alt="..." class="rounded">
+                </div>
+            <div class="caption">
+              <h3 class="blue-text text-darken-2">{{l.nombre}}</h3>
+              <p>{{l.descripcion}}</p>
+              <p>{{l.broker}}</p>
+              <p><a routerLink='/detalles/{{l.id}}' class="btn btn-primary" role="button">Ver</a> </p>
+            </div>
+          </div>
+        </div>   
+          
+      </div>
+</div>
+</div>
+

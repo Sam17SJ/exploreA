@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div class="row">
+        
+        <div class="col-md-8">
+            <br>
+            <br>
+           
+            <div materialize="carousel" class="carousel carousel-slider">
+                    <a class="carousel-item" *ngFor="let l of list" ><img src="http://www.hostalabadia.com/wp-content/uploads/10876871.jpg"></a>
+                    
+                </div>
+                        
+        </div>
+ 
+        <div class=" col-md-4">
+
+             <h3 class="blue-text text-darken-2">{{lugar.nombre}}</h3>
+             <h4>{{lugar.descripcion}}</h4>
+             <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+                
+        </div>
+        
+    </div>
+        
+   
+</div>
+
+
+
+        
+        
+        
+        
+        
+        

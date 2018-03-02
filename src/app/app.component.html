@@ -1,0 +1,64 @@
+
+   
+  
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" routeLink="catalogo" >Explore</a>
+      </div>  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active"><a routerLink="catalogo" >Catalogo <span class="sr-only">(current)</span></a></li>
+          <li routerLinkActive="active"><a  routerLink="oferta" >Ofertar Propiedad</a></li>          
+        </ul>        
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li><a routerLink="login">Log in</a></li>
+          <!-- <li><a routerLink="perfil">{{sesion}}</a></li>           -->
+          <li><a routerLink="registro">Registrar! </a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  
+
+<div class="fondito" style="text-align:center" >
+  <h1>
+    Bienvenido a {{ title }}!
+  </h1>
+  <img width="50" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<router-outlet></router-outlet>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Explore</h5>
+        <p class="grey-text text-lighten-4">La solucion mas confiable.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" routerLink="catalogo">Catalogo</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Oferta</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Broker</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Tarifas</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2017 Copyright Explore
+    <a class="grey-text text-lighten-4 right" href="#!">Contactanos</a>
+    </div>
+  </div>
+</footer>
